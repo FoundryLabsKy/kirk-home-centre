@@ -17,13 +17,14 @@ Delivery & Installation, Our Story, Visit Us. Routes are hash-based:
 
 ## Design
 
-- **Palette:** the company palette from the brand research brief — Kirk
-  Heritage Navy `#0B2C4D`, Signal Red `#C8102E` (the single accent, used only
-  on CTAs and aisle tabs), Warm White `#F7F5F0`, Charcoal `#2B2B2B` body text,
-  and Garden Green `#3E7C3A` for success states. All colour pairs pass WCAG AA
-  (verified with axe). The palette is provisional per the research caveat —
-  re-validate against a real storefront/logo photo, then adjust the token
-  block at the top of the stylesheet if needed (all colours are CSS variables).
+- **Palette:** validated against an owner-supplied storefront photo. The
+  accent is Kirk's actual sign red, `#C0272D`, sampled from the ships-wheel
+  mark and exposure-corrected against the white sign panel; it is the single
+  accent, used only on CTAs and aisle tabs. Kirk Heritage Navy `#0B2C4D`
+  (from the brand research) is the supporting dark ground, Warm White
+  `#F7F5F0` the base, Charcoal `#2B2B2B` the body text, and Garden Green
+  `#3E7C3A` semantic success. All colour pairs pass WCAG AA (verified with
+  axe). All colours are CSS variables in one token block.
 - **Type:** Bricolage Grotesque (display) + Karla (body), loaded async from
   Google Fonts with clean system-font fallbacks; a slow font CDN can never
   block first paint.
@@ -52,8 +53,10 @@ Items the owner should confirm before launch:
    "call before the window if anything slips") is a proposed service standard,
    drafted to answer the store's most common complaint. Management should sign
    off before it goes live.
-4. **Logo.** The header uses a typographic "K" plate as a stand-in. Swap in the
-   real logo file in the `.logo` block once brand photography/assets arrive.
+4. **Logo.** The header mark and favicon are an inline-SVG recreation of the
+   Kirkconnell ships-wheel "K" (drawn from a storefront photo). Swap in the
+   official vector art in the `.logo` block and the favicon `<link>` when Kirk
+   provides it — and confirm permission to use the mark before public launch.
 5. **Best of Cayman awards** wording on the Our Story page — confirm the exact
    categories/years the store wants to claim.
 6. **WhatsApp.** A click-to-chat link is recommended (heavily used in Cayman)

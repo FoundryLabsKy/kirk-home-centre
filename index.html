@@ -6,6 +6,7 @@
 <title>Kirk Home Centre — Hardware, Home &amp; Building Supplies, Grand Cayman</title>
 <meta name="description" content="Kirk Home Centre, 257 Eastern Avenue, George Town. A Kirkconnell family business since 1974. Hardware, lumber, kitchen and bath, paint, garden, bicycles, and Cayman's exclusive SIW &amp; CWS impact-rated windows and doors. Open Mon–Sat from 7am.">
 <meta name="theme-color" content="#0B2C4D">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g fill="%23C0272D"><rect x="46" y="1" width="8" height="22" rx="4"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(45 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(90 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(135 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(180 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(225 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(270 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(315 50 50)"/></g><circle cx="50" cy="50" r="33" fill="none" stroke="%23C0272D" stroke-width="11"/><circle cx="50" cy="50" r="26.5" fill="%23FFFFFF"/><text x="50" y="52" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="36" font-weight="900" fill="%23C0272D">K</text></svg>'>
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kirk Home Centre">
@@ -78,10 +79,11 @@
    the aisle-sign index tabs. All pairs checked for WCAG AA.
    ============================================================== */
 :root{
-  /* Brand palette per the Kirk Home Centre brand research:
-     Heritage Navy #0B2C4D · Signal Red #C8102E · Warm White #F7F5F0
-     Charcoal #2B2B2B · Garden Green #3E7C3A (semantic only).
-     Provisional until validated against a storefront/logo photo. */
+  /* Brand palette validated against an owner-supplied storefront photo
+     (red ships-wheel "K" mark + wordmark on white panels, warm cream
+     building). Sign red sampled and exposure-corrected to #C0272D.
+     Heritage Navy #0B2C4D (per the brand research) is the supporting
+     dark ground; Garden Green #3E7C3A is semantic only. */
 
   /* heritage navy scale */
   --navy-900:#07203B;
@@ -92,13 +94,13 @@
   --navy-100:#D9E4EF;   /* pale navy tint for chips on light */
 
   /* the one accent */
-  --red:#C8102E;        /* Signal Red: CTAs + aisle tabs only. 5.9:1 with white */
-  --red-hi:#A50D26;     /* hover/active */
+  --red:#C0272D;        /* Kirk sign red (sampled): CTAs + aisle tabs only. 5.9:1 with white */
+  --red-hi:#9E1F25;     /* hover/active */
 
   /* neutrals (warm white base, charcoal text) */
   --paper:#F7F5F0;      /* Warm White */
-  --sand:#EDE7D9;       /* alternating bands */
-  --sand-line:#DFD5C2;
+  --sand:#EFE7D0;       /* alternating bands, toward the building's cream */
+  --sand-line:#E1D5B8;
   --card:#FFFFFF;
   --text:#2B2B2B;       /* Charcoal */
   --muted:#556372;      /* 5.4:1 on warm white */
@@ -230,10 +232,11 @@ header.site .wrap{display:flex;align-items:center;gap:26px;min-height:76px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--on-dark);margin-right:auto}
 .logo .mark{
   width:46px;height:46px;flex:none;border-radius:var(--r-1);
-  background:var(--red);color:#fff;
+  background:#fff;
   display:grid;place-items:center;
-  font-family:var(--f-display);font-weight:800;font-size:1.5rem;
 }
+.logo .mark svg{width:38px;height:38px}
+.wheel-k text{font-family:var(--f-display),Arial,sans-serif}
 .logo .word{font-family:var(--f-display);font-weight:800;font-size:1.28rem;line-height:1.05;letter-spacing:.01em}
 .logo .word small{display:block;font-family:var(--f-body);font-weight:500;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-label)}
 nav.main{display:flex;gap:2px;align-items:center}
@@ -515,7 +518,7 @@ footer.site .legal{
 <header class="site" id="siteHeader">
   <div class="wrap">
     <a class="logo" href="#/home" aria-label="Kirk Home Centre, home page">
-      <span class="mark" aria-hidden="true">K</span>
+      <span class="mark" aria-hidden="true"><svg class="wheel-k" viewBox="0 0 100 100" focusable="false" aria-hidden="true"><g fill="#C0272D"><rect x="46" y="1" width="8" height="22" rx="4"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(45 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(90 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(135 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(180 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(225 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(270 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(315 50 50)"/></g><circle cx="50" cy="50" r="33" fill="none" stroke="#C0272D" stroke-width="11"/><circle cx="50" cy="50" r="26.5" fill="#FFFFFF"/><text x="50" y="53" text-anchor="middle" dominant-baseline="central" font-size="36" font-weight="800" fill="#C0272D">K</text></svg></span>
       <span class="word">Kirk Home Centre<small>Est. 1974 · Grand Cayman</small></span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
