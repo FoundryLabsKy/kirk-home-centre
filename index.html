@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kirk Home Centre — Hardware, Home &amp; Building Supplies, Grand Cayman</title>
+<meta name="description" content="Kirk Home Centre, 257 Eastern Avenue, George Town. A Kirkconnell family business since 1974. Hardware, lumber, kitchen and bath, paint, garden, bicycles, and Cayman's exclusive SIW &amp; CWS impact-rated windows and doors. Open Mon–Sat from 7am.">
+<meta name="theme-color" content="#0B2C4D">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kirk Home Centre">
+<meta property="og:title" content="Kirk Home Centre — serving Cayman homes since 1974">
+<meta property="og:description" content="Eleven departments under one roof on Eastern Avenue: hardware, lumber, kitchen &amp; bath, paint, garden, bicycles, and Cayman's exclusive SIW &amp; CWS impact-rated windows and doors.">
+<meta property="og:locale" content="en_KY">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kirk Home Centre — serving Cayman homes since 1974">
+<meta name="twitter:description" content="Hardware, home and building supplies at 257 Eastern Avenue, George Town, Grand Cayman. Open Mon–Sat from 7am.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fonts load async (media swap) so a slow font CDN can never block first paint;
+     the font stacks below fall back cleanly to system faces meanwhile. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap"></noscript>
+
+<!-- LocalBusiness structured data (real, researched company details) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HardwareStore",
+  "name": "Kirk Home Centre",
+  "alternateName": "Kirk Home Center",
+  "slogan": "Serving Cayman homes since 1974.",
+  "description": "Family-owned hardware and home store in George Town, Grand Cayman. Building supplies, lumber, hardware, tools, kitchen and bath, appliances, paint, home decor, garden, bicycles, and exclusive SIW and CWS impact-rated windows and doors.",
+  "telephone": "+1-345-949-2521",
+  "faxNumber": "+1-345-949-7195",
+  "url": "https://kirkhomecentre.ky/",
+  "foundingDate": "1974",
+  "parentOrganization": { "@type": "Organization", "name": "Kirkconnell Enterprises Ltd" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "257 Eastern Avenue",
+    "postOfficeBoxNumber": "P.O. Box 72",
+    "addressLocality": "George Town",
+    "addressRegion": "Grand Cayman",
+    "postalCode": "KY1-1102",
+    "addressCountry": "KY"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "17:30" }
+  ],
+  "department": {
+    "@type": "HardwareStore",
+    "name": "Kirk Home Centre — Contractor Sales",
+    "telephone": "+1-345-949-2521",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "17:00" }
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "Rohl" },
+    { "@type": "Brand", "name": "Toto" },
+    { "@type": "Brand", "name": "American Standard" },
+    { "@type": "Brand", "name": "SIW Impact Windows and Doors" },
+    { "@type": "Brand", "name": "Custom Window Systems (CWS)" }
+  ],
+  "paymentAccepted": "Cash, Credit Card",
+  "isAccessibleForFree": true
+}
+</script>
+
+<style>
+/* ==============================================================
+   DESIGN TOKENS — Kirk Home Centre
+   Warm paper white dominant, harbour navy secondary, and ONE
+   saturated accent: hardware signal red, reserved for CTAs and
+   the aisle-sign index tabs. All pairs checked for WCAG AA.
+   ============================================================== */
+:root{
+  /* Brand palette per the Kirk Home Centre brand research:
+     Heritage Navy #0B2C4D · Signal Red #C8102E · Warm White #F7F5F0
+     Charcoal #2B2B2B · Garden Green #3E7C3A (semantic only).
+     Provisional until validated against a storefront/logo photo. */
+
+  /* heritage navy scale */
+  --navy-900:#07203B;
+  --navy-800:#0B2C4D;   /* Kirk Heritage Navy: header, footer, boards */
+  --navy-700:#14406B;   /* raised panels on dark */
+  --navy-600:#1E4E7D;   /* hover on dark controls, links on light */
+  --navy-500:#2E6394;
+  --navy-100:#D9E4EF;   /* pale navy tint for chips on light */
+
+  /* the one accent */
+  --red:#C8102E;        /* Signal Red: CTAs + aisle tabs only. 5.9:1 with white */
+  --red-hi:#A50D26;     /* hover/active */
+
+  /* neutrals (warm white base, charcoal text) */
+  --paper:#F7F5F0;      /* Warm White */
+  --sand:#EDE7D9;       /* alternating bands */
+  --sand-line:#DFD5C2;
+  --card:#FFFFFF;
+  --text:#2B2B2B;       /* Charcoal */
+  --muted:#556372;      /* 5.4:1 on warm white */
+  --line:#DED8CC;
+
+  /* on dark */
+  --on-dark:#F7F5F0;
+  --on-dark-2:#B7C6D8;  /* secondary text on heritage navy, 7.4:1 */
+  --on-dark-label:#8FB8DA;
+
+  /* semantic */
+  --ok:#3E7C3A;         /* Garden Green */
+
+  /* elevation: one light source, top. Navy-tinted, layered. */
+  --sh-1:0 1px 2px rgba(11,44,77,.10), 0 2px 8px rgba(11,44,77,.06);
+  --sh-2:0 2px 4px rgba(11,44,77,.12), 0 10px 24px -8px rgba(11,44,77,.14);
+  --sh-3:0 3px 6px rgba(11,44,77,.14), 0 22px 48px -16px rgba(11,44,77,.26);
+
+  /* radius scale: workmanlike, small */
+  --r-1:4px;   /* tags, tabs */
+  --r-2:8px;   /* controls, inputs */
+  --r-3:12px;  /* cards, plates */
+
+  --wrap:1180px;
+  --pad:clamp(20px,5vw,60px);
+
+  --f-display:"Bricolage Grotesque","Trebuchet MS",Helvetica,Arial,sans-serif;
+  --f-body:"Karla","Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+body{
+  margin:0;
+  font-family:var(--f-body);
+  font-size:17px;
+  line-height:1.6;
+  color:var(--text);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:var(--navy-600);text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:hover{color:var(--navy-800)}
+:focus-visible{outline:3px solid var(--navy-600);outline-offset:2px;border-radius:2px}
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--navy-800);color:var(--on-dark);padding:10px 18px;border-radius:0 0 var(--r-2) 0;
+}
+.skip:focus{left:0}
+
+h1,h2,h3,h4{
+  font-family:var(--f-display);
+  line-height:1.12;
+  margin:0 0 .45em;
+  color:var(--navy-800);
+  letter-spacing:-0.01em;
+  font-weight:700;
+}
+h1{font-size:clamp(2.1rem,5.2vw,3.6rem);font-weight:800;letter-spacing:-0.02em}
+h2{font-size:clamp(1.55rem,3.4vw,2.35rem)}
+h3{font-size:1.22rem}
+p{margin:0 0 1em}
+.lede{font-size:1.13rem;color:var(--muted);max-width:62ch}
+.measure{max-width:66ch}
+.muted{color:var(--muted)}
+
+.eyebrow{
+  display:inline-block;
+  font-family:var(--f-display);
+  font-weight:600;font-size:.8rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--navy-600);
+  border-bottom:2px solid var(--sand-line);
+  padding-bottom:4px;margin-bottom:14px;
+}
+.on-dark .eyebrow,.band-navy .eyebrow,.board .eyebrow{color:var(--on-dark-label);border-color:var(--navy-600)}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+section{padding:clamp(52px,8vw,96px) 0}
+section.tight{padding:clamp(36px,5vw,60px) 0}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--f-display);font-weight:600;font-size:1rem;
+  padding:13px 24px;min-height:48px;border-radius:var(--r-2);
+  text-decoration:none;cursor:pointer;border:2px solid transparent;
+  transition:background-color .18s ease-out,color .18s ease-out,border-color .18s ease-out,transform .18s ease-out,box-shadow .18s ease-out;
+}
+.btn:focus-visible{outline-offset:3px}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-hi);color:#fff}
+.btn-primary:active{transform:translateY(1px)}
+.btn-ghost{background:transparent;color:var(--navy-800);border-color:var(--navy-800)}
+.btn-ghost:hover{background:var(--navy-800);color:var(--on-dark)}
+.on-dark .btn-ghost{color:var(--on-dark);border-color:var(--on-dark-2)}
+.on-dark .btn-ghost:hover{background:var(--on-dark);color:var(--navy-800);border-color:var(--on-dark)}
+.btn-link{
+  display:inline-flex;align-items:center;gap:6px;min-height:44px;
+  font-family:var(--f-display);font-weight:600;color:var(--navy-800);
+  text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;
+}
+.btn-link:hover{color:var(--red)}
+.btn .arrow{transition:transform .18s ease-out}
+.btn:hover .arrow,.btn-link:hover .arrow{transform:translateX(3px)}
+
+/* ---------- header ---------- */
+.utility{
+  background:var(--navy-900);color:var(--on-dark-2);
+  font-size:.86rem;
+}
+.utility .wrap{display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:38px;flex-wrap:wrap;padding-top:4px;padding-bottom:4px}
+.utility a{color:var(--on-dark);text-decoration:none;font-weight:700}
+.utility a:hover{text-decoration:underline}
+.utility .dot{opacity:.45;margin:0 8px}
+.open-chip{display:inline-flex;align-items:center;gap:7px}
+.open-chip .lamp{width:8px;height:8px;border-radius:50%;background:#59B26A;flex:none}
+.open-chip.closed .lamp{background:#B9C8D2}
+
+header.site{
+  position:sticky;top:0;z-index:100;
+  background:var(--navy-800);color:var(--on-dark);
+  transition:box-shadow .2s ease-out;
+}
+header.site.scrolled{box-shadow:var(--sh-2)}
+header.site .wrap{display:flex;align-items:center;gap:26px;min-height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--on-dark);margin-right:auto}
+.logo .mark{
+  width:46px;height:46px;flex:none;border-radius:var(--r-1);
+  background:var(--red);color:#fff;
+  display:grid;place-items:center;
+  font-family:var(--f-display);font-weight:800;font-size:1.5rem;
+}
+.logo .word{font-family:var(--f-display);font-weight:800;font-size:1.28rem;line-height:1.05;letter-spacing:.01em}
+.logo .word small{display:block;font-family:var(--f-body);font-weight:500;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-label)}
+nav.main{display:flex;gap:2px;align-items:center}
+nav.main a{
+  color:var(--on-dark-2);text-decoration:none;font-weight:700;font-size:.95rem;
+  padding:10px 12px;border-radius:var(--r-2);
+}
+nav.main a:hover{color:var(--on-dark);background:var(--navy-700)}
+nav.main a[aria-current="page"]{color:var(--on-dark);background:var(--navy-700)}
+nav.main .btn{margin-left:10px;padding:10px 18px;min-height:44px}
+nav.main a.btn-primary{color:#fff;background:var(--red)}
+nav.main a.btn-primary:hover{color:#fff;background:var(--red-hi)}
+.menu-btn{
+  display:none;background:none;border:2px solid var(--on-dark-2);color:var(--on-dark);
+  border-radius:var(--r-2);padding:9px 14px;font:inherit;font-weight:700;cursor:pointer;min-height:44px;
+}
+@media (max-width:1020px){
+  nav.main{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:var(--navy-800);flex-direction:column;align-items:stretch;
+    padding:10px var(--pad) 22px;gap:4px;box-shadow:var(--sh-3);
+    border-top:1px solid var(--navy-700);
+  }
+  nav.main.open{display:flex}
+  nav.main a{padding:13px 14px;font-size:1.05rem}
+  nav.main .btn{margin:10px 0 0}
+  .menu-btn{display:inline-flex;align-items:center;gap:8px}
+  .utility .hide-sm{display:none}
+}
+
+/* ---------- storm banner ---------- */
+.storm{
+  background:var(--sand);border-bottom:1px solid var(--sand-line);
+}
+.storm .wrap{display:flex;align-items:center;gap:14px;padding-top:11px;padding-bottom:11px;flex-wrap:wrap;font-size:.95rem}
+.storm .tag{
+  background:var(--red);color:#fff;font-family:var(--f-display);font-weight:700;
+  font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;
+  padding:4px 10px;border-radius:var(--r-1);flex:none;
+}
+.storm a{font-weight:700}
+
+/* ---------- hero ---------- */
+.hero{background:var(--paper);border-bottom:1px solid var(--line)}
+.hero .wrap{
+  display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);
+  gap:clamp(30px,5vw,70px);align-items:center;
+  padding-top:clamp(48px,7vw,88px);padding-bottom:clamp(48px,7vw,88px);
+}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--f-display);font-weight:600;font-size:.85rem;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--navy-600);
+  margin-bottom:18px;
+}
+.hero .kicker::before{content:"";width:34px;height:2px;background:var(--red)}
+.hero p.lede{margin-bottom:26px}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.hero .facts{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+.hero .facts div{font-size:.92rem;color:var(--muted)}
+.hero .facts strong{display:block;font-family:var(--f-display);font-weight:700;font-size:1.15rem;color:var(--navy-800)}
+@media (max-width:900px){ .hero .wrap{grid-template-columns:1fr} }
+
+/* store directory board (signature element) */
+.board{
+  background:var(--navy-800);color:var(--on-dark);
+  border-radius:var(--r-3);box-shadow:var(--sh-3);
+  padding:10px 10px 14px;
+  border-top:6px solid var(--red);
+}
+.board .board-head{
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  padding:12px 14px 10px;
+}
+.board .board-head span{font-family:var(--f-display);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;color:var(--on-dark-label)}
+.board .board-head em{font-style:normal;font-size:.78rem;color:var(--on-dark-2)}
+.board ul{list-style:none;margin:0;padding:0}
+.board li + li{border-top:1px solid var(--navy-700)}
+.board a{
+  display:flex;align-items:center;gap:14px;
+  padding:9px 14px;color:var(--on-dark);text-decoration:none;
+  font-family:var(--f-display);font-weight:600;font-size:.98rem;
+  border-radius:var(--r-2);
+}
+.board a:hover{background:var(--navy-700)}
+.board a:hover .go{transform:translateX(3px)}
+.board .num{
+  flex:none;width:44px;text-align:center;
+  font-weight:800;font-size:.8rem;letter-spacing:.06em;
+  background:var(--paper);color:var(--navy-800);
+  border-radius:var(--r-1);padding:3px 0;
+}
+.board .go{margin-left:auto;color:var(--on-dark-label);transition:transform .18s ease-out}
+
+/* ---------- aisle sign cards ---------- */
+.aisles{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.aisle{
+  position:relative;
+  background:var(--navy-800);color:var(--on-dark);
+  border-radius:var(--r-3);box-shadow:var(--sh-1);
+  padding:24px 22px 20px;
+  display:flex;flex-direction:column;gap:8px;
+  transition:transform .18s ease-out,box-shadow .18s ease-out;
+}
+.aisle:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
+.aisle .tab{
+  position:absolute;top:-9px;left:20px;
+  background:var(--red);color:#fff;
+  font-family:var(--f-display);font-weight:700;font-size:.72rem;
+  letter-spacing:.13em;text-transform:uppercase;
+  padding:3px 10px;border-radius:var(--r-1);
+}
+.aisle h3{color:var(--on-dark);margin:6px 0 2px;font-size:1.28rem}
+.aisle p{color:var(--on-dark-2);font-size:.94rem;margin:0 0 6px;flex:1}
+.aisle .items{font-size:.85rem;color:var(--on-dark-label);letter-spacing:.02em}
+.aisle a.cover{position:absolute;inset:0;border-radius:var(--r-3)}
+.aisle a.cover:focus-visible{outline-offset:-3px}
+
+/* ---------- generic cards / bands ---------- */
+.band-sand{background:var(--sand);border-top:1px solid var(--sand-line);border-bottom:1px solid var(--sand-line)}
+.band-navy{background:var(--navy-800);color:var(--on-dark)}
+.band-navy h2,.band-navy h3{color:var(--on-dark)}
+.band-navy p{color:var(--on-dark-2)}
+
+.cards{display:grid;gap:20px}
+.cards.c3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.cards.c2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-3);
+  padding:26px 24px;box-shadow:var(--sh-1);
+}
+.card h3{margin-top:2px}
+.card .cap{font-family:var(--f-display);font-weight:600;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
+
+/* split feature rows */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.split.rev > .visual{order:-1}
+@media (max-width:860px){
+  .split{grid-template-columns:1fr}
+  .split.rev > .visual{order:0}
+}
+
+/* brand plates */
+.brands-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.brand-plate{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-2);
+  padding:18px 16px;text-align:center;box-shadow:var(--sh-1);
+}
+.brand-plate strong{font-family:var(--f-display);font-weight:700;font-size:1.12rem;color:var(--navy-800);display:block}
+.brand-plate span{font-size:.82rem;color:var(--muted)}
+.band-navy .brand-plate{background:var(--navy-700);border-color:var(--navy-600)}
+.band-navy .brand-plate strong{color:var(--on-dark)}
+.band-navy .brand-plate span{color:var(--on-dark-2)}
+
+/* testimonials */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.quote{
+  background:var(--card);border:1px solid var(--line);border-left:4px solid var(--red);
+  border-radius:var(--r-2);padding:22px;box-shadow:var(--sh-1);
+}
+.quote .stars{color:#A9770E;font-size:.9rem;letter-spacing:.15em;margin-bottom:8px}
+.quote blockquote{margin:0 0 12px;font-size:1.02rem;line-height:1.55}
+.quote cite{font-style:normal;font-size:.88rem;color:var(--muted);font-weight:700}
+
+/* heritage timeline */
+.timeline{list-style:none;margin:34px 0 0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--navy-600)}
+.timeline li{position:relative;padding:0 0 26px 36px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:50%;
+  background:var(--red);border:3px solid var(--navy-800);box-shadow:0 0 0 2px var(--navy-600);
+}
+.timeline .year{font-family:var(--f-display);font-weight:800;font-size:1.15rem;color:var(--on-dark);display:block}
+.timeline p{margin:4px 0 0;font-size:.98rem}
+
+/* checklist */
+.check-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:26px 0}
+.check{
+  display:flex;gap:12px;align-items:flex-start;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-2);
+  padding:14px 16px;font-size:.97rem;box-shadow:var(--sh-1);
+}
+.check .tick{
+  flex:none;width:22px;height:22px;border-radius:var(--r-1);margin-top:2px;
+  background:var(--navy-100);color:var(--navy-800);
+  display:grid;place-items:center;font-weight:700;font-size:.8rem;
+}
+
+/* hours table */
+table.hours{width:100%;border-collapse:collapse;margin:18px 0 6px;font-size:.98rem}
+table.hours th,table.hours td{text-align:left;padding:11px 8px;border-bottom:1px solid var(--line)}
+table.hours th{font-family:var(--f-display);font-weight:700;color:var(--navy-800)}
+table.hours td.time{font-weight:700;white-space:nowrap}
+.band-navy table.hours th{color:var(--on-dark)}
+.band-navy table.hours th,.band-navy table.hours td{border-color:var(--navy-600);color:var(--on-dark-2)}
+.band-navy table.hours td.time{color:var(--on-dark)}
+
+/* ---------- forms ---------- */
+form.quote-form{max-width:560px}
+.field{margin-bottom:18px}
+.field label{
+  display:block;font-family:var(--f-display);font-weight:600;font-size:.92rem;
+  color:var(--navy-800);margin-bottom:6px;
+}
+.field .hint{font-size:.84rem;color:var(--muted);margin:-2px 0 6px}
+.field input,.field select,.field textarea{
+  width:100%;font:inherit;color:var(--text);
+  background:#fff;border:1.5px solid var(--sand-line);border-radius:var(--r-2);
+  padding:12px 14px;min-height:48px;
+  transition:border-color .15s ease-out,box-shadow .15s ease-out;
+}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--navy-600);box-shadow:0 0 0 3px rgba(30,78,125,.18);
+}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--red)}
+.field .err{display:none;color:var(--red);font-size:.86rem;font-weight:700;margin-top:5px}
+.field.invalid .err{display:block}
+.form-note{font-size:.88rem;color:var(--muted);margin-top:14px;max-width:52ch}
+.form-ok{
+  display:none;background:#EAF3EB;border:1.5px solid var(--ok);color:#20492A;
+  border-radius:var(--r-2);padding:14px 16px;margin-top:16px;font-weight:700;
+}
+.form-ok.show{display:block}
+
+/* footer */
+footer.site{background:var(--navy-900);color:var(--on-dark-2);font-size:.94rem}
+footer.site .cols{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:34px;
+  padding:clamp(44px,6vw,70px) 0 34px;
+}
+footer.site h4{color:var(--on-dark);font-size:1rem;margin-bottom:14px}
+footer.site ul{list-style:none;margin:0;padding:0}
+footer.site li{margin-bottom:9px}
+footer.site a{color:var(--on-dark-2)}
+footer.site a:hover{color:var(--on-dark)}
+footer.site .legal{
+  border-top:1px solid var(--navy-700);padding:20px 0 26px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.85rem;
+}
+@media (max-width:860px){ footer.site .cols{grid-template-columns:1fr 1fr} }
+@media (max-width:520px){ footer.site .cols{grid-template-columns:1fr} }
+
+/* page hero (interior pages) */
+.page-head{background:var(--navy-800);color:var(--on-dark);padding:clamp(40px,6vw,72px) 0}
+.page-head h1{color:var(--on-dark);font-size:clamp(1.9rem,4.6vw,3rem);margin-bottom:.3em}
+.page-head p{color:var(--on-dark-2);max-width:64ch;margin:0;font-size:1.08rem}
+.crumbs{font-size:.85rem;margin-bottom:18px;color:var(--on-dark-label)}
+.crumbs a{color:var(--on-dark-2)}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .45s ease-out,transform .45s ease-out}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.aisle,.board .go,.btn .arrow{transition:none}
+}
+
+/* helpers */
+.two-col{columns:2;column-gap:40px}
+@media (max-width:700px){ .two-col{columns:1} }
+.mt-0{margin-top:0}.mb-0{margin-bottom:0}
+.center{text-align:center}
+.section-head{max-width:70ch;margin-bottom:clamp(26px,4vw,44px)}
+.section-head.split-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;max-width:none;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<div class="utility">
+  <div class="wrap">
+    <span class="open-chip" id="openChip"><span class="lamp"></span><span id="openText">Open Mon–Sat from 7:00 AM</span></span>
+    <span class="hide-sm">257 Eastern Avenue, George Town<span class="dot">•</span><a href="tel:+13459492521">(345) 949-2521</a></span>
+  </div>
+</div>
+
+<header class="site" id="siteHeader">
+  <div class="wrap">
+    <a class="logo" href="#/home" aria-label="Kirk Home Centre, home page">
+      <span class="mark" aria-hidden="true">K</span>
+      <span class="word">Kirk Home Centre<small>Est. 1974 · Grand Cayman</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main" id="mainNav" aria-label="Main">
+      <a href="#/departments" data-nav="departments">Departments</a>
+      <a href="#/brands" data-nav="brands">Exclusive Brands</a>
+      <a href="#/storm" data-nav="storm">Storm Prep</a>
+      <a href="#/contractors" data-nav="contractors">Contractors</a>
+      <a href="#/delivery" data-nav="delivery">Delivery</a>
+      <a href="#/about" data-nav="about">Our Story</a>
+      <a class="btn btn-primary" href="#/visit" data-nav="visit">Visit Us</a>
+    </nav>
+  </div>
+</header>
+
+<div class="storm" id="stormBanner" hidden>
+  <div class="wrap">
+    <span class="tag">Storm season</span>
+    <span>Hurricane season runs 1 June – 30 November. Impact-rated windows and doors have lead times — order early.</span>
+    <a href="#/storm">See the storm-prep checklist</a>
+  </div>
+</div>
+
+<main id="main"></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Kirk Home Centre</h4>
+        <p>A Kirkconnell family business, serving Cayman homes from the same Eastern Avenue site since 1974. Hardware, home and building supplies — eleven departments under one roof.</p>
+        <p class="mb-0">257 Eastern Avenue, George Town<br>Grand Cayman, KY1-1102 · P.O. Box 72<br><a href="tel:+13459492521">(345) 949-2521</a></p>
+      </div>
+      <div>
+        <h4>Store</h4>
+        <ul>
+          <li><a href="#/departments">Departments</a></li>
+          <li><a href="#/brands">Exclusive brands</a></li>
+          <li><a href="#/storm">Storm prep</a></li>
+          <li><a href="#/delivery">Delivery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#/about">Our story</a></li>
+          <li><a href="#/contractors">Contractor sales</a></li>
+          <li><a href="#/visit">Visit us</a></li>
+          <li><a href="https://www.facebook.com/p/Kirk-Home-Centre-100063496573271" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Home Centre: Mon–Sat, 7:00 AM – 5:30 PM</li>
+          <li>Contractor Sales: Mon–Sat, 7:00 AM – 5:00 PM</li>
+          <li>Sunday: closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Kirk Home Centre. All rights reserved.</span>
+      <span>Free parking · Wheelchair accessible · Major credit cards accepted</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   Kirk Home Centre — single-file site. Hash router, no dependencies.
+   ===================================================================== */
+
+/* ------ shared data ------ */
+
+// Aisle numbers mirror the in-store department layout; renumber here if
+// the store's own aisle plan differs.
+const DEPTS = [
+  { n:"01", slug:"building",  name:"Building Supplies & Lumber",
+    blurb:"Lumber, cement, fasteners and heavy hardware for jobs from a shelf bracket to a full build.",
+    items:"Lumber · cement · rebar · fasteners",
+    long:"The contractor's end of the store: dimensional lumber, sheet goods, cement, rebar, and the heavy hardware that holds a Cayman build together. The Contractor Sales desk (open from 7 AM) can price a full materials list and arrange delivery to site." },
+  { n:"02", slug:"hardware",  name:"Hardware & Tools",
+    blurb:"Power tools, hand tools, drills, abrasives and every fastener drawer you'd hope for.",
+    items:"Power tools · hand tools · fasteners",
+    long:"Drills, saws, sanders and the hand tools behind every repair on the island — plus fasteners, abrasives and machine tools sold by the piece or by the box. Staff on this aisle fix things for a living; bring the broken part and they'll match it." },
+  { n:"03", slug:"kitchen",   name:"Kitchen & Bath",
+    blurb:"Fittings and fixtures from everyday to premium — home of Rohl, Toto and American Standard.",
+    items:"Rohl · Toto · American Standard",
+    long:"From a replacement washer to a full renovation suite. Kirk Home Centre carries Rohl and Toto fixtures and American Standard bathroom fittings — premium lines you won't find across the island — alongside everyday taps, sinks and vanities." },
+  { n:"04", slug:"appliances", name:"Appliances",
+    blurb:"Major and small appliances chosen for island homes, with delivery available.",
+    items:"Fridges · washers · small appliances",
+    long:"Major appliances sized for Cayman kitchens and laundry rooms, plus the small counter-top appliances that make a rental feel like home. Ask about delivery when you buy — we schedule it before you leave the store." },
+  { n:"05", slug:"electrical", name:"Electrical",
+    blurb:"Wiring, fittings, water heaters and the parts to pass inspection the first time.",
+    items:"Wiring · fittings · water heaters",
+    long:"Electrical equipment and supplies for homeowners and licensed electricians: wire, boxes, breakers, fittings, and water heaters — one of the first things to check before storm season." },
+  { n:"06", slug:"paint",     name:"Paint",
+    blurb:"Interior and exterior paint mixed to your colour, with the brushes and prep to match.",
+    items:"Interior · exterior · sundries",
+    long:"Paint that stands up to salt air and Caribbean sun, mixed while you shop, with primers, brushes, rollers and prep supplies on the same aisle. Bring a chip or a photo and we'll get you close." },
+  { n:"07", slug:"decor",     name:"Home Décor & Housewares",
+    blurb:"The Bed Bath & Beyond side of the store: kitchenware, bedding, lamps, storage and frames.",
+    items:"Kitchenware · bedding · lamps · storage",
+    long:"The side of Kirk that customers compare to Bed Bath & Beyond: kitchenware, eco-friendly towels and bedding, lamps and lampshades, picture frames, and storage for every closet. This is where the store earns its 'second home' reviews." },
+  { n:"08", slug:"garden",    name:"Lawn, Garden & Outdoor",
+    blurb:"Gardening materials and outdoor furniture, with staff who actually garden here.",
+    items:"Garden supplies · outdoor furniture",
+    long:"Gardening materials suited to Cayman's soil and sun, plus outdoor furniture built for the climate. The garden team's knowledge is a running theme in our reviews — ask them anything, from crotons to composting." },
+  { n:"09", slug:"bicycles",  name:"Bicycles & Accessories",
+    blurb:"Huffy bikes for kids and adults, helmets, lights and repairs in-store.",
+    items:"Huffy bikes · helmets · repairs",
+    long:"Children's and adult Huffy bicycles, plus helmets, lights and gear — and a repair service when a tyre or chain lets you down. A Cayman Christmas tradition for fifty years." },
+  { n:"10", slug:"windows",   name:"Doors, Windows & Storm Protection",
+    blurb:"Cayman's exclusive supplier of SIW and CWS impact-rated windows and doors.",
+    items:"SIW · CWS · impact-rated",
+    long:"Kirk Home Centre is the exclusive Cayman supplier of SIW Impact Windows and Doors and Custom Window Systems (CWS) impact-rated windows and doors — engineered for hurricane zones, fitted to your openings, and quoted free. Order before the season; impact units have lead times." },
+  { n:"11", slug:"seasonal",  name:"Seasonal & Christmas",
+    blurb:"Storm supplies in summer, and from mid-November, one of the island's best Christmas shops.",
+    items:"Storm supplies · Christmas shop",
+    long:"The aisle that changes with the calendar: hurricane supplies through the summer, and from mid-November, trees, lights and decorations that make this a Cayman Christmas destination." },
+];
+
+const QUOTES = [
+  { s:5, t:"Great place to shop for home goods. Similar to Bed Bath and Beyond in U.S. Extremely friendly staff and reasonable prices for the island.", by:"Dan Barr, Google review" },
+  { s:5, t:"One of my absolutely favourite stores. There you will find awesome products for your home.", by:"Dionne Henry-Clarke, Google review" },
+  { s:5, t:"Excellent source for home furnishings.", by:"Grant Patten, Google review" },
+  { s:0, t:"My second home!", by:"Kerrie Diane Jackson, Facebook" },
+];
+
+const PHONE_HTML = '<a href="tel:+13459492521">(345) 949-2521</a>';
+// TODO(owner): move to a kirkhomecentre.ky mailbox when it exists; this is
+// the currently published support address.
+const FORM_EMAIL = "info@kel.ky";
+
+/* ------ tiny helpers ------ */
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+function stars(n){
+  if(!n) return "";
+  return '<div class="stars" aria-label="' + n + ' out of 5 stars">' + "★".repeat(n) + "</div>";
+}
+
+function quoteCards(list){
+  return '<div class="quotes">' + list.map(q =>
+    '<figure class="quote reveal">' + stars(q.s) +
+    '<blockquote>“' + esc(q.t) + '”</blockquote>' +
+    '<figcaption><cite>' + esc(q.by) + '</cite></figcaption></figure>'
+  ).join("") + '</div>';
+}
+
+function aisleCards(depts){
+  return '<div class="aisles">' + depts.map(d =>
+    '<article class="aisle reveal">' +
+      '<span class="tab" aria-hidden="true">Aisle ' + d.n + '</span>' +
+      '<h3>' + d.name + '</h3>' +
+      '<p>' + d.blurb + '</p>' +
+      '<span class="items">' + d.items + '</span>' +
+      '<a class="cover" href="#/departments" aria-label="' + esc(d.name) + ' — see the full department list"></a>' +
+    '</article>'
+  ).join("") + '</div>';
+}
+
+function quoteForm(kind){
+  const types = kind === "storm"
+    ? ["Impact windows quote","Impact doors quote","Windows and doors","Other storm-prep question"]
+    : kind === "contractor"
+      ? ["Materials list pricing","Contractor account enquiry","Delivery to site","Other trade enquiry"]
+      : ["Impact windows and doors","Kitchen and bath","Appliances","Delivery question","General enquiry"];
+  return `
+  <form class="quote-form" novalidate data-kind="${kind}">
+    <div class="field" data-f="name">
+      <label for="${kind}-name">Your name</label>
+      <input id="${kind}-name" name="name" type="text" autocomplete="name" required>
+      <p class="err">Please enter your name.</p>
+    </div>
+    <div class="field" data-f="email">
+      <label for="${kind}-email">Email</label>
+      <input id="${kind}-email" name="email" type="email" autocomplete="email" required>
+      <p class="err">Please enter a valid email address.</p>
+    </div>
+    <div class="field" data-f="phone">
+      <label for="${kind}-phone">Phone <span class="muted" style="font-weight:400">(optional)</span></label>
+      <input id="${kind}-phone" name="phone" type="tel" autocomplete="tel">
+    </div>
+    <div class="field" data-f="type">
+      <label for="${kind}-type">What is this about?</label>
+      <select id="${kind}-type" name="type" required>
+        <option value="">Choose one…</option>
+        ${types.map(t => '<option>' + t + '</option>').join("")}
+      </select>
+      <p class="err">Please choose a topic so we can route your request.</p>
+    </div>
+    <div class="field" data-f="msg">
+      <label for="${kind}-msg">Tell us about the job <span class="muted" style="font-weight:400">(optional)</span></label>
+      <p class="hint">Rough sizes, number of openings, or what you're trying to fix — anything helps.</p>
+      <textarea id="${kind}-msg" name="msg"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Send request <span class="arrow" aria-hidden="true">→</span></button>
+    <p class="form-ok" role="status">Opening your email app with the request drafted — press send there and we'll get back to you.</p>
+    <p class="form-note">Submitting opens your own email app with the message pre-filled — nothing is sent until you press send. Prefer to talk? Call ${'(345) 949-2521'} — the line is answered store hours, Mon–Sat.</p>
+  </form>`;
+}
+
+/* ------ pages ------ */
+
+function pageHead(title, sub){
+  return `<div class="page-head"><div class="wrap">
+    <p class="crumbs"><a href="#/home">Home</a> / ${title}</p>
+    <h1>${title}</h1>
+    <p>${sub}</p>
+  </div></div>`;
+}
+
+const PAGES = {
+
+home(){ return `
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="kicker">257 Eastern Avenue · George Town</p>
+      <h1>The home store Cayman has trusted since 1974.</h1>
+      <p class="lede">Eleven departments under one roof — lumber and tools on one side, kitchenware and bedding on the other. Customers call it Home Depot meets Bed Bath &amp; Beyond. We call it Kirk.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#/visit">Plan your visit <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="tel:+13459492521">Call (345) 949-2521</a>
+      </div>
+      <div class="facts">
+        <div><strong>Since 1974</strong>A Kirkconnell family business</div>
+        <div><strong>4.2★ · 365+ reviews</strong>On Google, and counting</div>
+        <div><strong>Mon–Sat from 7 AM</strong>Contractor desk opens first</div>
+      </div>
+    </div>
+    <div>
+      <div class="board reveal" aria-label="Store directory">
+        <div class="board-head"><span>Store directory</span><em>11 departments</em></div>
+        <ul>
+          ${DEPTS.slice(0,8).map(d => '<li><a href="#/departments"><span class="num">' + d.n + '</span>' + d.name + '<span class="go" aria-hidden="true">→</span></a></li>').join("")}
+          <li><a href="#/departments"><span class="num">+3</span>Bicycles, storm protection, seasonal<span class="go" aria-hidden="true">→</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <span class="eyebrow">Walk the aisles</span>
+        <h2 class="mb-0">Everything a Cayman home needs, aisle by aisle</h2>
+      </div>
+      <a class="btn-link" href="#/departments">See all departments <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+    ${aisleCards(DEPTS.slice(0,6))}
+  </div>
+</section>
+
+<section class="band-navy">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Only at Kirk</span>
+        <h2>The island's exclusive home for SIW &amp; CWS impact windows</h2>
+        <p class="measure">When a hurricane is three days out, the difference between plywood and engineered protection is already decided. Kirk Home Centre is the exclusive Cayman supplier of SIW Impact Windows and Doors and Custom Window Systems (CWS) — impact-rated units built for storm zones, quoted free from your measurements.</p>
+        <p><a class="btn btn-primary" href="#/storm">Get a windows quote <span class="arrow" aria-hidden="true">→</span></a></p>
+      </div>
+      <div class="visual">
+        <div class="brands-row">
+          <div class="brand-plate"><strong>SIW</strong><span>Impact Windows &amp; Doors — exclusive</span></div>
+          <div class="brand-plate"><strong>CWS</strong><span>Custom Window Systems — exclusive</span></div>
+          <div class="brand-plate"><strong>Rohl</strong><span>Premium kitchen &amp; bath</span></div>
+          <div class="brand-plate"><strong>Toto</strong><span>Bath fixtures</span></div>
+          <div class="brand-plate"><strong>American Standard</strong><span>Bathroom fittings</span></div>
+          <div class="brand-plate"><strong>Huffy</strong><span>Bicycles for all ages</span></div>
+        </div>
+        <p class="center" style="margin-top:14px;font-size:.88rem"><a href="#/brands" style="color:var(--on-dark-2)">More about our exclusive brands</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What customers say</span>
+      <h2 class="mb-0">Fifty years of second homes</h2>
+    </div>
+    ${quoteCards(QUOTES)}
+    <p class="muted" style="margin-top:18px;font-size:.9rem">Verbatim reviews from Google and Facebook. Rated 4.2 stars across more than 365 Google reviews.</p>
+  </div>
+</section>
+
+<section class="band-sand tight">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Delivery, done properly</span>
+        <h2>Bought it heavy? We'll bring it home.</h2>
+        <p class="measure">Island-wide delivery for appliances, lumber and bulky goods — scheduled when you buy, with a phone number that answers if plans change. See exactly how it works before you order.</p>
+        <a class="btn-link" href="#/delivery">How delivery works <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div class="visual">
+        <div class="card">
+          <span class="cap">Growing in 2026</span>
+          <h3>A bigger Kirk is coming</h3>
+          <p class="mb-0">Planning approval is in for a 26,072 sq ft addition to the store and 208 more parking spaces — the biggest investment on Eastern Avenue since the original 1974 build. More room in the aisles, same family behind the counter.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="center">
+  <div class="wrap">
+    <h2>Come see us on Eastern Avenue</h2>
+    <p class="lede" style="margin-left:auto;margin-right:auto">Open Monday to Saturday from 7:00 AM. Free parking, wheelchair accessible, and staff who know where everything is.</p>
+    <p style="margin-top:22px"><a class="btn btn-primary" href="#/visit">Hours, map &amp; contact <span class="arrow" aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+`;},
+
+departments(){ return pageHead(
+  "Departments",
+  "Eleven departments under one roof at 257 Eastern Avenue — from dimensional lumber to duvet covers. Here's the full walk-through."
+) + `
+<section>
+  <div class="wrap">
+    ${DEPTS.map(d => `
+    <article class="split ${Number(d.n)%2===0 ? "rev" : ""}" style="padding:26px 0;border-bottom:1px solid var(--line)">
+      <div>
+        <span class="eyebrow">Aisle ${d.n}</span>
+        <h2 style="font-size:1.6rem">${d.name}</h2>
+        <p class="measure">${d.long}</p>
+        <span class="muted" style="font-size:.9rem">${d.items}</span>
+      </div>
+      <div class="visual">
+        <div class="aisle" style="max-width:360px;margin:${Number(d.n)%2===0 ? "0 auto 0 0" : "0 0 0 auto"}">
+          <span class="tab" aria-hidden="true">Aisle ${d.n}</span>
+          <h3>${d.name}</h3>
+          <p>${d.blurb}</p>
+          <span class="items">${d.items}</span>
+        </div>
+      </div>
+    </article>`).join("")}
+    <p style="margin-top:34px">Not sure which aisle you need? Call ${PHONE_HTML} and we'll check stock before you drive over.</p>
+  </div>
+</section>
+<section class="band-navy tight center">
+  <div class="wrap">
+    <h2>Planning a bigger project?</h2>
+    <p style="max-width:56ch;margin:0 auto 22px">The Contractor Sales desk prices full materials lists and arranges site delivery — for licensed contractors and ambitious homeowners alike.</p>
+    <a class="btn btn-primary" href="#/contractors">Contractor sales <span class="arrow" aria-hidden="true">→</span></a>
+  </div>
+</section>
+`;},
+
+brands(){ return pageHead(
+  "Exclusive Brands",
+  "Some of what's on our shelves you simply can't buy anywhere else on the island. That's deliberate."
+) + `
+<section>
+  <div class="wrap">
+    <div class="cards c2">
+      <div class="card reveal">
+        <span class="cap">Exclusive to Kirk in Cayman</span>
+        <h3>SIW Impact Windows &amp; Doors</h3>
+        <p>Florida-engineered, impact-rated windows and doors built for hurricane zones. Kirk Home Centre is the exclusive Cayman supplier — measured, quoted and ordered through our windows desk.</p>
+        <a class="btn-link" href="#/storm">Get a quote <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div class="card reveal">
+        <span class="cap">Exclusive to Kirk in Cayman</span>
+        <h3>Custom Window Systems (CWS)</h3>
+        <p>Impact-rated aluminium and vinyl window and door systems, made to your opening sizes. Exclusive to Kirk Home Centre in the Cayman Islands.</p>
+        <a class="btn-link" href="#/storm">Get a quote <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div class="card reveal">
+        <span class="cap">Premium kitchen &amp; bath</span>
+        <h3>Rohl</h3>
+        <p>Handcrafted faucets and fixtures from one of the most respected names in luxury kitchens and baths — on display in our Kitchen &amp; Bath department.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cap">Premium bath</span>
+        <h3>Toto</h3>
+        <p>Japanese-engineered toilets and bath fixtures known for build quality and water efficiency — a fit for Cayman, where every gallon is shipped in or made here.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cap">Bathroom fittings</span>
+        <h3>American Standard</h3>
+        <p>Dependable, widely-serviceable bathroom fittings for renovations and rentals — the workhorse line beside our premium brands.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cap">Bicycles</span>
+        <h3>Huffy</h3>
+        <p>Children's and adult bicycles, plus helmets, lights and accessories — with repairs done in-store when you need them.</p>
+      </div>
+    </div>
+    <p style="margin-top:30px" class="measure">Want to see any of these lines in person? They're all on the floor at 257 Eastern Avenue — or call ${PHONE_HTML} to check a specific model before you visit.</p>
+  </div>
+</section>
+`;},
+
+storm(){ return pageHead(
+  "Storm Prep",
+  "Hurricane season runs 1 June to 30 November, and peaks mid-August through early October. The homes that ride it out comfortably are the ones that prepared in May."
+) + `
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">The permanent fix</span>
+        <h2>Impact-rated windows and doors, exclusive to Kirk</h2>
+        <p class="measure">Plywood is a scramble you repeat every season. Impact-rated units are a decision you make once. As the exclusive Cayman supplier of <strong>SIW Impact Windows and Doors</strong> and <strong>Custom Window Systems (CWS)</strong>, we measure your openings, quote free of charge, and order units engineered for storm zones.</p>
+        <p class="measure"><strong>Order early.</strong> Impact units are made to measure and shipped in — lead times stretch as the season approaches. A quote in January beats a queue in June.</p>
+      </div>
+      <div class="visual">
+        <div class="card">
+          <span class="cap">How a windows quote works</span>
+          <ol style="margin:0;padding-left:20px;line-height:1.9">
+            <li>Send us your rough sizes and number of openings below.</li>
+            <li>We confirm measurements and spec the right SIW or CWS units.</li>
+            <li>You get a written quote — no obligation, no pressure.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:64px">The Kirk storm checklist</h2>
+    <p class="lede">Everything below is stocked at Eastern Avenue. Do the walk once in May and you're done before the first advisory.</p>
+    <div class="check-grid">
+      ${[
+        "Impact windows and doors quoted and ordered (lead times apply)",
+        "Shutter hardware, anchors and fasteners checked and replaced",
+        "Plywood, tarps and rope for openings you haven't upgraded yet",
+        "Flashlights, lanterns and batteries in every size you use",
+        "Coolers and water storage for a week without power",
+        "Generator oil, fuel cans and a heavy-duty extension cord",
+        "Propane and a working camp stove or grill",
+        "First-aid kit restocked; medications topped up",
+        "Water heater and electrical checked before the season",
+        "Photos of your home, inside and out, for insurance",
+      ].map(c => '<div class="check reveal"><span class="tick" aria-hidden="true">✓</span>' + c + '</div>').join("")}
+    </div>
+    <p class="muted" style="font-size:.9rem">Official guidance: Hazard Management Cayman Islands publishes the national hurricane plan each season — our checklist covers the hardware, theirs covers the rest.</p>
+
+    <h2 style="margin-top:56px">Request a storm-prep quote</h2>
+    <p class="measure">Windows, doors, or the whole checklist — tell us what you're protecting and we'll come back with prices and honest lead times.</p>
+    ${quoteForm("storm")}
+  </div>
+</section>
+`;},
+
+contractors(){ return pageHead(
+  "Contractor Sales",
+  "A dedicated desk, open at 7 AM sharp, that prices full materials lists and gets them to your site — because your crew shouldn't wait on a cashier queue."
+) + `
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">For the trades</span>
+        <h2>Built for builders since 1974</h2>
+        <p class="measure">Kirk Home Centre opened as a lumber and heavy-hardware supplier before most of today's contractors were born. The Contractor Sales desk carries that on: dimensional lumber, cement, rebar, fasteners, electrical and plumbing supplies, priced as a list and staged for pickup or delivered to site.</p>
+        <p class="measure">Homeowners running their own projects are welcome at the same desk — if you have a materials list, we'll price it.</p>
+        <table class="hours">
+          <caption class="eyebrow" style="text-align:left;caption-side:top">Desk hours</caption>
+          <tr><th scope="row">Contractor Sales</th><td class="time">Mon–Sat, 7:00 AM – 5:00 PM</td></tr>
+          <tr><th scope="row">Main store</th><td class="time">Mon–Sat, 7:00 AM – 5:30 PM</td></tr>
+          <tr><th scope="row">Sunday</th><td class="time">Closed</td></tr>
+        </table>
+      </div>
+      <div class="visual">
+        <div class="cards" style="gap:14px">
+          <div class="card reveal"><span class="cap">Step 1</span><h3 style="font-size:1.08rem">Send or drop off your list</h3><p class="mb-0">Email it via the form below, or bring it to the desk — plans and take-offs welcome.</p></div>
+          <div class="card reveal"><span class="cap">Step 2</span><h3 style="font-size:1.08rem">We price and stage it</h3><p class="mb-0">Line-item pricing, substitutions flagged, stock confirmed before you commit.</p></div>
+          <div class="card reveal"><span class="cap">Step 3</span><h3 style="font-size:1.08rem">Pick up at 7 AM or get delivery</h3><p class="mb-0">Staged for collection when we open, or scheduled to your site island-wide.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:56px">Send a trade enquiry</h2>
+    ${quoteForm("contractor")}
+  </div>
+</section>
+`;},
+
+delivery(){ return pageHead(
+  "Delivery & Installation",
+  "Straight answers about how delivery works — when it's scheduled, what it covers, and exactly who to call if anything changes."
+) + `
+<section>
+  <div class="wrap">
+    <div class="cards c3">
+      <div class="card reveal">
+        <span class="cap">What we deliver</span>
+        <h3>The heavy stuff</h3>
+        <p class="mb-0">Appliances, lumber and building materials, outdoor furniture, and anything else that won't fit in the back seat. Ask at the register or the Contractor Sales desk when you buy.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cap">When it's scheduled</span>
+        <h3>Before you leave the store</h3>
+        <p class="mb-0">Your delivery window is agreed at purchase — you'll leave knowing the day. Island-wide across Grand Cayman, with contractor site deliveries handled by the trade desk.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cap">If plans change</span>
+        <h3>One number, a real answer</h3>
+        <p class="mb-0">If your delivery needs to move — on our side or yours — call ${PHONE_HTML} during store hours and ask for dispatch. We'd rather reschedule you properly than leave you waiting.</p>
+      </div>
+    </div>
+
+    <div class="split" style="margin-top:56px">
+      <div>
+        <h2>Our delivery promise</h2>
+        <p class="measure">We know delivery is where a good shopping trip can turn into a frustrating week — and we've heard that feedback plainly. So here's the standard we hold ourselves to:</p>
+        <ul style="line-height:2;padding-left:20px">
+          <li>A delivery day agreed <strong>in writing on your receipt</strong> at purchase.</li>
+          <li>A call from us <strong>before</strong> the window if anything slips — not after.</li>
+          <li>Careful placement where you want it, not just off the tailgate.</li>
+          <li>A straight path to a person: ${PHONE_HTML}, Mon–Sat, store hours.</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="card">
+          <span class="cap">Windows &amp; doors</span>
+          <h3>Measured, supplied, coordinated</h3>
+          <p class="mb-0">SIW and CWS impact-rated units are quoted from your measurements and coordinated with your installer or contractor on delivery. Start with a quote on the <a href="#/storm">storm-prep page</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="band-sand tight center">
+  <div class="wrap">
+    <h2>Have a delivery question right now?</h2>
+    <p style="max-width:50ch;margin:0 auto 20px">Call us before you worry. The line is answered Monday to Saturday, store hours.</p>
+    <a class="btn btn-primary" href="tel:+13459492521">Call (345) 949-2521</a>
+  </div>
+</section>
+`;},
+
+about(){ return pageHead(
+  "Our Story",
+  "Six generations of Kirkconnells, one shipwreck, and fifty years on Eastern Avenue."
+) + `
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">The family behind the counter</span>
+        <h2>It started with a shipwreck</h2>
+        <p class="measure">Before 1840, a Scottish sailor named William Kirkconnell was shipwrecked off the coast of Cuba. He found work with the Caymanians building boats there — and was persuaded to stay. Six generations later, the Kirkconnell name is on storefronts across Grand Cayman: Kirk Freeport, Kirk Market, Kirk Marine, Kirk Office — and this one.</p>
+        <p class="measure">Kirk Home Centre opened in 1974, built by brothers Eldon and Charles Kirkconnell on Eastern Avenue for wholesale grocery, homewares, lumber and heavy hardware. The main building alone covered 36,000 square feet — enormous for its day — and the store has anchored the neighbourhood ever since.</p>
+        <p class="measure">Half a century on, it's still family-owned, still on the same site, and still the store Caymanians describe as "my second home."</p>
+      </div>
+      <div class="visual on-dark">
+        <div class="board" style="padding:26px 26px 30px">
+          <span class="eyebrow">Milestones</span>
+          <ul class="timeline">
+            <li><span class="year">Before 1840</span><p>William Kirkconnell, shipwrecked off Cuba, settles among Caymanian boatbuilders.</p></li>
+            <li><span class="year">1964</span><p>Captain Eldon Kirkconnell builds the Kirk Plaza supermarket in George Town.</p></li>
+            <li><span class="year">1972</span><p>Kirk Freeport opens — today Cayman's only Official Rolex retailer.</p></li>
+            <li><span class="year">1974</span><p>Eldon and Charles Kirkconnell open Kirk Home Centre on Eastern Avenue.</p></li>
+            <li><span class="year">2026</span><p>A $3.5M expansion is approved: 26,072 sq ft more store, 208 more parking spaces.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:64px">
+      <span class="eyebrow">Why it matters to you</span>
+      <h2 class="mb-0">What fifty years buys our customers</h2>
+    </div>
+    <div class="cards c3">
+      <div class="card reveal"><span class="cap">Roots</span><h3>We're not going anywhere</h3><p class="mb-0">Same family, same site, since 1974 — and investing millions more into it in 2026. A warranty from Kirk means something because Kirk will still be here.</p></div>
+      <div class="card reveal"><span class="cap">Range</span><h3>Two stores in one</h3><p class="mb-0">Serious building supply on one side, a home store customers compare to Bed Bath &amp; Beyond on the other. One trip, whole project.</p></div>
+      <div class="card reveal"><span class="cap">People</span><h3>Staff who know the island</h3><p class="mb-0">Friendly, knowledgeable service comes up in review after review — especially in the garden department, where the advice is grown locally too.</p></div>
+    </div>
+
+    <div style="margin-top:56px">
+      <span class="eyebrow">Recognition</span>
+      <p class="measure mb-0">Kirk Home Centre has been voted a Best of Cayman winner across home accessories, housewares, hardware, home store and outdoor furniture categories — awards decided by the customers who shop here.</p>
+    </div>
+  </div>
+</section>
+<section class="band-navy tight center">
+  <div class="wrap">
+    <h2>Come write the next chapter with us</h2>
+    <p style="max-width:52ch;margin:0 auto 22px">The best way to know Kirk is to walk the aisles. We're on Eastern Avenue, Monday to Saturday from 7 AM.</p>
+    <a class="btn btn-primary" href="#/visit">Plan your visit <span class="arrow" aria-hidden="true">→</span></a>
+  </div>
+</section>
+`;},
+
+visit(){ return pageHead(
+  "Visit Us",
+  "257 Eastern Avenue, George Town — with free parking, wheelchair access, and someone at the door who knows where everything is."
+) + `
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <h2>Hours &amp; location</h2>
+        <table class="hours">
+          <tr><th scope="row">Home Centre</th><td class="time">Mon–Sat, 7:00 AM – 5:30 PM</td></tr>
+          <tr><th scope="row">Contractor Sales</th><td class="time">Mon–Sat, 7:00 AM – 5:00 PM</td></tr>
+          <tr><th scope="row">Sunday</th><td class="time">Closed</td></tr>
+        </table>
+        <p style="margin-top:20px"><strong>Kirk Home Centre</strong><br>
+        257 Eastern Avenue, George Town<br>
+        Grand Cayman, Cayman Islands, KY1-1102<br>
+        P.O. Box 72</p>
+        <p>Phone: ${PHONE_HTML}<br>Fax: (345) 949-7195</p>
+        <p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Kirk+Home+Centre%2C+257+Eastern+Avenue%2C+George+Town%2C+Grand+Cayman" rel="noopener">Open in Google Maps</a>
+          <a class="btn btn-ghost" href="tel:+13459492521">Call the store</a>
+        </p>
+        <p class="muted" style="font-size:.9rem">Free parking on site · wheelchair accessible · major credit cards accepted. You'll find us on Eastern Avenue between the harbour and the airport road — look for the Kirk sign.</p>
+      </div>
+      <div class="visual">
+        <h2>Send us a message</h2>
+        <p class="measure">Stock checks, quotes, delivery questions — anything. We answer during store hours, Monday to Saturday.</p>
+        ${quoteForm("general")}
+      </div>
+    </div>
+  </div>
+</section>
+`;},
+
+};
+
+/* ------ router ------ */
+const VALID = Object.keys(PAGES);
+const TITLES = {
+  home:"Kirk Home Centre — Hardware, Home & Building Supplies, Grand Cayman",
+  departments:"Departments — Kirk Home Centre",
+  brands:"Exclusive Brands — Kirk Home Centre",
+  storm:"Storm Prep & Impact Windows — Kirk Home Centre",
+  contractors:"Contractor Sales — Kirk Home Centre",
+  delivery:"Delivery & Installation — Kirk Home Centre",
+  about:"Our Story — Kirk Home Centre",
+  visit:"Visit Us — Kirk Home Centre",
+};
+
+function route(){
+  let r = (location.hash || "#/home").replace(/^#\//,"").split("?")[0];
+  if(!VALID.includes(r)) r = "home";
+  $("#main").innerHTML = PAGES[r]();
+  document.title = TITLES[r];
+  // nav state
+  document.querySelectorAll("nav.main a").forEach(a => {
+    if(a.dataset.nav === r) a.setAttribute("aria-current","page");
+    else a.removeAttribute("aria-current");
+  });
+  // close mobile menu
+  const nav = $("#mainNav"), btn = $("#menuBtn");
+  nav.classList.remove("open"); btn.setAttribute("aria-expanded","false");
+  window.scrollTo(0,0);
+  wireForms();
+  observeReveals();
+}
+window.addEventListener("hashchange", route);
+
+/* ------ mobile menu ------ */
+$("#menuBtn").addEventListener("click", () => {
+  const nav = $("#mainNav"), btn = $("#menuBtn");
+  const open = nav.classList.toggle("open");
+  btn.setAttribute("aria-expanded", String(open));
+});
+
+/* ------ header shadow ------ */
+window.addEventListener("scroll", () => {
+  $("#siteHeader").classList.toggle("scrolled", window.scrollY > 4);
+}, {passive:true});
+
+/* ------ storm banner: June (5) through November (10) ------ */
+(function(){
+  const m = new Date().getMonth();
+  if(m >= 5 && m <= 10) $("#stormBanner").hidden = false;
+})();
+
+/* ------ open/closed chip ------ */
+(function(){
+  const now = new Date();
+  const day = now.getDay(); // 0 Sun
+  const mins = now.getHours()*60 + now.getMinutes();
+  const chip = $("#openChip"), txt = $("#openText");
+  const open = day >= 1 && day <= 6 && mins >= 7*60 && mins < 17*60+30;
+  if(open){ txt.textContent = "Open now · until 5:30 PM"; }
+  else { chip.classList.add("closed"); txt.textContent = "Closed now · opens Mon–Sat 7:00 AM"; }
+})();
+
+/* ------ current year ------ */
+$("#year").textContent = new Date().getFullYear();
+
+/* ------ forms: inline validation + mailto compose ------ */
+function wireForms(){
+  document.querySelectorAll("form.quote-form").forEach(form => {
+    const get = f => form.querySelector('[data-f="'+f+'"]');
+    const validEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
+    function checkField(f){
+      const wrap = get(f);
+      const ctl = wrap.querySelector("input,select,textarea");
+      let ok = true;
+      if(f === "name") ok = ctl.value.trim().length > 0;
+      if(f === "email") ok = validEmail(ctl.value.trim());
+      if(f === "type") ok = ctl.value !== "";
+      wrap.classList.toggle("invalid", !ok);
+      ctl.setAttribute("aria-invalid", String(!ok));
+      return ok;
+    }
+    ["name","email","type"].forEach(f => {
+      const ctl = get(f).querySelector("input,select,textarea");
+      ctl.addEventListener("blur", () => { if(ctl.value !== "") checkField(f); });
+      ctl.addEventListener("input", () => { if(get(f).classList.contains("invalid")) checkField(f); });
+      ctl.addEventListener("change", () => checkField(f));
+    });
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      const results = ["name","email","type"].map(checkField);
+      if(results.includes(false)){
+        form.querySelector(".field.invalid input, .field.invalid select")?.focus();
+        return;
+      }
+      const v = f => get(f).querySelector("input,select,textarea").value.trim();
+      const kind = form.dataset.kind;
+      const subject = "Website enquiry (" + v("type") + ") — " + v("name");
+      const body =
+        "Name: " + v("name") + "\n" +
+        "Email: " + v("email") + "\n" +
+        (v("phone") ? "Phone: " + v("phone") + "\n" : "") +
+        "Topic: " + v("type") + "\n" +
+        "Sent from: kirkhomecentre.ky (" + kind + " form)\n\n" +
+        (v("msg") || "(no additional details)");
+      form.querySelector(".form-ok").classList.add("show");
+      window.location.href = "mailto:" + FORM_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+    });
+  });
+}
+
+/* ------ reveal on scroll ------ */
+let observer = null;
+function observeReveals(){
+  if(observer) observer.disconnect();
+  const els = document.querySelectorAll(".reveal");
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)){
+    els.forEach(el => el.classList.add("in"));
+    return;
+  }
+  observer = new IntersectionObserver(entries => {
+    entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add("in"); observer.unobserve(en.target); } });
+  }, {rootMargin:"0px 0px -8% 0px"});
+  els.forEach(el => observer.observe(el));
+}
+
+route();
+</script>
+</body>
+</html>
