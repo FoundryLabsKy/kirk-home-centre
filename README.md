@@ -1,4 +1,4 @@
-# Kirk Home Centre — website
+# Kirk Home Centre website
 
 A complete, production-grade, multi-page brochure/catalog website for Kirk Home
 Centre, 257 Eastern Avenue, George Town, Grand Cayman, delivered as a single
@@ -6,7 +6,7 @@ self-contained `index.html`. Hash-routed, no build step, no external JavaScript.
 
 Open `index.html` in any modern browser, or host it on any static host behind
 HTTPS (GitHub Pages, Netlify, S3, or a plain web server). HTTPS hosting is a
-launch requirement — the current kirkhomecentre.ky one-pager is plain HTTP.
+launch requirement; the current kirkhomecentre.ky one-pager is plain HTTP.
 
 ## Pages
 
@@ -44,11 +44,11 @@ SIW/CWS supplier status, the Rohl/Toto/American Standard/Huffy lines, the
 
 Items the owner should confirm before launch:
 
-1. **Form email.** Forms compose a `mailto:` to `info@kel.ky` — the currently
+1. **Form email.** Forms compose a `mailto:` to `info@kel.ky`; that is the currently
    published support address (`FORM_EMAIL` constant in the script). Replace it
    with a kirkhomecentre.ky mailbox when one exists, and consider replacing the
    whole `mailto:` step with a `fetch()` to a form endpoint.
-2. **Aisle numbers** are illustrative — set them to the real floor plan.
+2. **Aisle numbers** are illustrative; set them to the real floor plan.
 3. **Delivery promise** wording ("delivery day in writing on your receipt",
    "call before the window if anything slips") is a proposed service standard,
    drafted to answer the store's most common complaint. Management should sign
@@ -56,8 +56,8 @@ Items the owner should confirm before launch:
 4. **Logo.** The header mark and favicon are an inline-SVG recreation of the
    Kirkconnell ships-wheel "K" (drawn from a storefront photo). Swap in the
    official vector art in the `.logo` block and the favicon `<link>` when Kirk
-   provides it — and confirm permission to use the mark before public launch.
-5. **Best of Cayman awards** wording on the Our Story page — confirm the exact
+   provides it; also confirm permission to use the mark before public launch.
+5. **Best of Cayman awards** wording on the Our Story page; confirm the exact
    categories/years the store wants to claim.
 6. **WhatsApp.** A click-to-chat link is recommended (heavily used in Cayman)
    but deliberately omitted until the store confirms a WhatsApp-enabled number.
