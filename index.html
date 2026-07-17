@@ -6,7 +6,7 @@
 <title>Kirk Home Centre · Hardware, Home &amp; Building Supplies, Grand Cayman</title>
 <meta name="description" content="Kirk Home Centre, 257 Eastern Avenue, George Town. A Kirkconnell family business since 1974. Hardware, lumber, kitchen and bath, paint, garden, bicycles, and Cayman's exclusive SIW &amp; CWS impact-rated windows and doors. Open Mon–Sat from 7am.">
 <meta name="theme-color" content="#0B2C4D">
-<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g fill="%23C0272D"><rect x="46" y="1" width="8" height="22" rx="4"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(45 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(90 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(135 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(180 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(225 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(270 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(315 50 50)"/></g><circle cx="50" cy="50" r="33" fill="none" stroke="%23C0272D" stroke-width="11"/><circle cx="50" cy="50" r="26.5" fill="%23FFFFFF"/><text x="50" y="52" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="36" font-weight="900" fill="%23C0272D">K</text></svg>'>
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g fill="%23C0272D"><g transform="rotate(0 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(45 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(90 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(135 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(180 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(225 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(270 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(315 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g></g><circle cx="50" cy="50" r="28.5" fill="none" stroke="%23C0272D" stroke-width="10"/><circle cx="50" cy="50" r="23.5" fill="%23FFFFFF"/><text x="50" y="53" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="44" font-weight="900" fill="%23C0272D">K</text></svg>'>
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kirk Home Centre">
@@ -230,15 +230,16 @@ header.site{
 header.site.scrolled{box-shadow:var(--sh-2)}
 header.site .wrap{display:flex;align-items:center;gap:26px;min-height:76px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--on-dark);margin-right:auto}
-.logo .mark{
-  width:46px;height:46px;flex:none;border-radius:var(--r-1);
-  background:#fff;
-  display:grid;place-items:center;
+.logo .plate{
+  display:flex;align-items:center;gap:10px;flex:none;
+  background:#fff;border-radius:var(--r-2);padding:7px 13px 7px 9px;
 }
-.logo .mark svg{width:38px;height:38px}
-.wheel-k text{font-family:var(--f-display),Arial,sans-serif}
-.logo .word{font-family:var(--f-display);font-weight:800;font-size:1.28rem;line-height:1.05;letter-spacing:.01em}
-.logo .word small{display:block;font-family:var(--f-body);font-weight:500;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-label)}
+.logo .plate svg{width:40px;height:40px;flex:none}
+.logo .lock{color:var(--red);line-height:1;font-family:var(--f-display)}
+.logo .lock b{display:block;font-weight:800;font-size:1.3rem;letter-spacing:.08em}
+.logo .lock i{display:block;font-style:normal;font-weight:700;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;margin-top:3px}
+.logo .est{font-family:var(--f-body);font-weight:500;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--on-dark-label);line-height:1.6}
+@media (max-width:700px){ .logo .est{display:none} }
 nav.main{display:flex;gap:2px;align-items:center}
 nav.main a{
   color:var(--on-dark-2);text-decoration:none;font-weight:700;font-size:.95rem;
@@ -518,8 +519,8 @@ footer.site .legal{
 <header class="site" id="siteHeader">
   <div class="wrap">
     <a class="logo" href="#/home" aria-label="Kirk Home Centre, home page">
-      <span class="mark" aria-hidden="true"><svg class="wheel-k" viewBox="0 0 100 100" focusable="false" aria-hidden="true"><g fill="#C0272D"><rect x="46" y="1" width="8" height="22" rx="4"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(45 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(90 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(135 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(180 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(225 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(270 50 50)"/><rect x="46" y="1" width="8" height="22" rx="4" transform="rotate(315 50 50)"/></g><circle cx="50" cy="50" r="33" fill="none" stroke="#C0272D" stroke-width="11"/><circle cx="50" cy="50" r="26.5" fill="#FFFFFF"/><text x="50" y="53" text-anchor="middle" dominant-baseline="central" font-size="36" font-weight="800" fill="#C0272D">K</text></svg></span>
-      <span class="word">Kirk Home Centre<small>Est. 1974 · Grand Cayman</small></span>
+      <span class="plate" aria-hidden="true"><svg class="wheel-k" viewBox="0 0 100 100" focusable="false" aria-hidden="true"><g fill="#C0272D"><g transform="rotate(0 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(45 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(90 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(135 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(180 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(225 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(270 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g><g transform="rotate(315 50 50)"><circle cx="50" cy="6.8" r="4.8"/><rect x="47.9" y="6.8" width="4.2" height="10.5"/></g></g><circle cx="50" cy="50" r="28.5" fill="none" stroke="#C0272D" stroke-width="10"/><text x="50" y="53" text-anchor="middle" dominant-baseline="central" font-family="Arial,Helvetica,sans-serif" font-size="44" font-weight="900" fill="#C0272D">K</text></svg><span class="lock"><b>KIRK</b><i>Home Centre</i></span></span>
+      <span class="est">Est. 1974<br>Grand Cayman</span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav class="main" id="mainNav" aria-label="Main">

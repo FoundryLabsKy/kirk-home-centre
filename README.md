@@ -53,10 +53,13 @@ Items the owner should confirm before launch:
    "call before the window if anything slips") is a proposed service standard,
    drafted to answer the store's most common complaint. Management should sign
    off before it goes live.
-4. **Logo.** The header mark and favicon are an inline-SVG recreation of the
-   Kirkconnell ships-wheel "K" (drawn from a storefront photo). Swap in the
-   official vector art in the `.logo` block and the favicon `<link>` when Kirk
-   provides it; also confirm permission to use the mark before public launch.
+4. **Logo.** The header carries a full inline-SVG recreation of the storefront
+   sign lockup: the ships-wheel with turned club handles and open centre, the
+   heavyweight K, and the stacked KIRK HOME CENTRE wordmark on a white panel.
+   It was rebuilt from an owner-supplied photo of the Eastern Avenue signage.
+   Swap in the official vector art in the `.logo` block and the favicon
+   `<link>` when Kirk provides it; also confirm permission to use the mark,
+   and match the wordmark typeface, before public launch.
 5. **Best of Cayman awards** wording on the Our Story page; confirm the exact
    categories/years the store wants to claim.
 6. **WhatsApp.** A click-to-chat link is recommended (heavily used in Cayman)
