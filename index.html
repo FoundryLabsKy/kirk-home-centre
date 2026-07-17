@@ -489,6 +489,12 @@ footer.site .legal{
 .crumbs{font-size:.85rem;margin-bottom:18px;color:var(--on-dark-label)}
 .crumbs a{color:var(--on-dark-2)}
 
+/* photos */
+figure.photo{margin:0}
+figure.photo img{display:block;width:100%;height:auto;border-radius:var(--r-3);box-shadow:var(--sh-2);background:var(--sand)}
+figure.photo figcaption{font-size:.85rem;color:var(--muted);margin-top:10px}
+.band-navy figure.photo figcaption,.on-dark figure.photo figcaption{color:var(--on-dark-2)}
+
 /* reveal on scroll */
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .45s ease-out,transform .45s ease-out}
 .reveal.in{opacity:1;transform:none}
@@ -824,7 +830,11 @@ home(){ return `
         <a class="btn-link" href="#/delivery">How delivery works <span class="arrow" aria-hidden="true">→</span></a>
       </div>
       <div class="visual">
-        <div class="card">
+        <figure class="photo reveal">
+          <img src="images/storefront.jpg" width="1500" height="833" loading="lazy" alt="The Kirk Home Centre building on Eastern Avenue: cream walls, and the red ships-wheel K sign beside the KIRK HOME CENTRE lettering">
+          <figcaption>Home base: 257 Eastern Avenue, George Town.</figcaption>
+        </figure>
+        <div class="card" style="margin-top:18px">
           <span class="cap">Growing in 2026</span>
           <h3>A bigger Kirk is coming</h3>
           <p class="mb-0">Planning approval is in for a 26,072 sq ft addition to the store and 208 more parking spaces, the biggest investment on Eastern Avenue since the original 1974 build. More room in the aisles, same family behind the counter.</p>
@@ -1074,6 +1084,10 @@ about(){ return pageHead(
         <p class="measure">Before 1840, a Scottish sailor named William Kirkconnell was shipwrecked off the coast of Cuba. He found work with the Caymanians building boats there and was persuaded to stay. Six generations later, the Kirkconnell name is on storefronts across Grand Cayman: Kirk Freeport, Kirk Market, Kirk Marine, Kirk Office, and this one.</p>
         <p class="measure">Kirk Home Centre opened in 1974, built by brothers Eldon and Charles Kirkconnell on Eastern Avenue for wholesale grocery, homewares, lumber and heavy hardware. The main building alone covered 36,000 square feet, enormous for its day, and the store has anchored the neighbourhood ever since.</p>
         <p class="measure">Half a century on, it's still family-owned, still on the same site, and still the store Caymanians describe as "my second home."</p>
+        <figure class="photo reveal">
+          <img src="images/storefront.jpg" width="1500" height="833" loading="lazy" alt="The Kirk Home Centre building on Eastern Avenue: cream walls, and the red ships-wheel K sign beside the KIRK HOME CENTRE lettering">
+          <figcaption>The store the brothers built, photographed on Eastern Avenue today.</figcaption>
+        </figure>
       </div>
       <div class="visual on-dark">
         <div class="board" style="padding:26px 26px 30px">
@@ -1138,6 +1152,10 @@ visit(){ return pageHead(
           <a class="btn btn-ghost" href="tel:+13459492521">Call the store</a>
         </p>
         <p class="muted" style="font-size:.9rem">Free parking on site · wheelchair accessible · major credit cards accepted. You'll find us on Eastern Avenue between the harbour and the airport road. Look for the Kirk sign.</p>
+        <figure class="photo reveal">
+          <img src="images/storefront.jpg" width="1500" height="833" loading="lazy" alt="The Kirk Home Centre building on Eastern Avenue: cream walls, and the red ships-wheel K sign beside the KIRK HOME CENTRE lettering">
+          <figcaption>This is the building; the red wheel on the cream wall is hard to miss.</figcaption>
+        </figure>
       </div>
       <div class="visual">
         <h2>Send us a message</h2>

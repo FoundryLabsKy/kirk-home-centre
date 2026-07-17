@@ -74,10 +74,13 @@ against the Mon–Sat 7:00–5:30 hours.
 
 ## Photography
 
-The site is deliberately photography-independent (typographic + aisle-sign
-visual system) so it can launch before a photo shoot. When professional photos
-of the storefront, departments, and brand displays arrive, natural slots are:
-the home hero's directory column, the department rows, and the Our Story page.
+The layout is photography-independent (typographic + aisle-sign visual
+system), so the site works with or without images. `images/` currently holds
+two colour-corrected crops of an owner-supplied photo of the Eastern Avenue
+storefront, placed on the Home, Our Story and Visit Us pages and in the
+walkthrough's brand section. Confirm the photo's usage rights before public
+launch, and replace these with professional shots when available; further
+natural slots are the department rows and the exclusive-brand displays.
 
 ## Accessibility and quality
 
